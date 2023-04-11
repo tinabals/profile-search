@@ -1,15 +1,16 @@
-import './App.css';
-import FormSection from './components/FormSection';
-import TodoList from './components/TodoList';
 
-
+import ProfileList from "./components/ProfileList"
+import "./index.css"
 function App() {
+
   return (
-    <div className="App">
-      <FormSection />
-      <TodoList />
+    <div className='profile-wrapper'>
+    <ProfileList />
     </div>
   );
 }
 
 export default App;
+
+
+
