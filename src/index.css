@@ -1,13 +1,74 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
-  margin: 0;
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+    
+      height: 100vh;
+ 
+      background-image: linear-gradient( rgb(222,79,136),rgb(255,97,116), rgb(255,147,97), rgb(255,206,102))
+    }
+    .profile-wrapper{
+      width: 80%;
+      margin: 30px auto 30px ;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+     
+    }
+
+    .input-for-profile input {
+      width: 91%;
+      height: 45px;
+      padding: 12px;
+      color: #111111;
+      font-weight: 500;
+      position: relative;
+      border-radius: 5px;
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      border: 2px solid #d1d3d4;
+      margin-bottom: 10px;
+    }
+    
+    .input-for-profile input:focus {
+      outline: none;
+      border-color: white;
+    }
+     .input-for-profile input::placeholder{
+        font-style: italic;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .user-component{
+      width: 100%;
+    
+     
+    }
+    .user-wraper{
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: white;
+      padding: 10px;
+      margin: 5px 0px 5px;
+      width: 82%;
+      font-size: 16px;
+    }
+    .name-pargh{
+      font-weight: 600;
+      line-height: 16px;
+    }
+.id-pargh{
+  font-weight: 400;
+  line-height: 16px;
+}
+.profile{
+  display: grid;
+grid-template-columns: repeat(2, 1fr);
 }
